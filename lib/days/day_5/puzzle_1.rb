@@ -30,6 +30,8 @@ module Days
 
       private
 
+      private_constant :STARTING_STACKS
+
       def instructions
         puzzle_input.split(/\n/)[10..].map do |instruction|
           instruction.split.values_at(1, 3, 5).map(&:to_i)

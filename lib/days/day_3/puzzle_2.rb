@@ -18,6 +18,8 @@ module Days
 
       private
 
+      private_constant :ITEM_LIST
+
       def priority_of(item)
         ITEM_LIST.index(item) + 1
       end

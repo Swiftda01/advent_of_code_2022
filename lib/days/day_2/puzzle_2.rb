@@ -38,6 +38,10 @@ module Days
 
       private
 
+      private_constant :PLAY
+      private_constant :RESPONSE
+      private_constant :SCORE
+
       def response_to(play, from:)
         index_of_play = PLAY.values.index(play)
         PLAY.values.rotate(RESPONSE[from])[index_of_play]

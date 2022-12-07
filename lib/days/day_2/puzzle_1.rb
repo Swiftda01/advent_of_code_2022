@@ -28,6 +28,8 @@ module Days
       def call
         puzzle_input.split(/\n/).inject(0) { |sum, round| sum + SCORE[round] }
       end
+
+      private_constant :SCORE
     end
   end
 end
